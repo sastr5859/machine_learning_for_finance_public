@@ -47,6 +47,21 @@ La performance est mesurée par l'**accuracy** sur un jeu de test équilibré (5
 
 ---
 
+## Usage
+
+Si vous voulez vous amuser à utiliser nos modèles ou tenter de les améliorer, rendez-vous dans la section code. 
+Cette section vous permet de re-train tous les modeles et de générer les différents graphes et visualisations que vous retrouverez dans le report_qrt.html. Ces graphes sont générés automatiquement. 
+
+Pour pouvoir retrain un modèle en particulier après avoir changer le code, vous pouvez utiliser :
+
+
+python code_qrt.py --eda — EDA seul
+python code_qrt.py --gbdt-v1 — baseline ensemble v1
+python code_qrt.py --gbdt-v2b — modèle final v2b
+python code_qrt.py --transformer --autoencoder — les deux NN
+python code_qrt.py --stability — analyse KS / dense vs sparse
+python code_qrt.py --all — tout d'un coup
+
 ## Environnement
 
 Python 3.9.6 — dépendances principales : `lightgbm`, `xgboost`, `catboost`, `torch`, `scikit-learn`, `pandas`, `numpy`.
